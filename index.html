@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- inside the lib file we have our jQuery
+	lib basically contains our external code and libraries -->
+	<title>Todo List Project</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/todos.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+</head>
+<body>
+
+	<div id="container">
+		<h1>Core electives To-Do List <i class="fas fa-plus"></i> </h1> 
+		<input type="text"  placeholder="add your course here"> 
+
+		<ul>
+			<li><span><i class="fas fa-trash-alt"></i></span> object oriented programming</li>
+			<li><span><i class="fas fa-trash-alt"></i></span> introduction to c++</li>
+			<li><span><i class="fas fa-trash-alt"></i></span> data structures and algorithms</li>
+		</ul>
+	</div>
+
+	<script type="text/javascript" src="assets/js/todos.js"></script>
+</body>
+</html>
+
+<!-- list of steps required -->
+<!-- 1) create all the files needed
+	 2) create a container with the header and the list
+	 3) create the delete button 
+	 4) center the div
+	 5) when we click on a li it turns gray and a strike-through effect happens (using a toggle class)
+	 6) get the button to actually delete a todo from the list
+	 7) focus on the styling: 
+			a) centers the div with margin and add a background 
+			   color to the container
+			b) adding a box shadow to the container (like border)
+			c) style our h1 (color, font, no margin , ....)
+			d) getting rid of the bullet points (list-style:none) 
+		    e) use css to add a color to every other li
+		    f) height and padding of all li
+			g) adding a color gradient for the background
+			h) add the icons
+			i) the animation of thegarbage is all done with CSS
+			j) with jQuery fadeout the input section whenever
+				the plus sign is clicked-->

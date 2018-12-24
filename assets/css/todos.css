@@ -1,0 +1,98 @@
+body{
+	font-family: Roboto;
+	font-size: 20px;
+}
+
+/*color gradient for the background in the body*/
+body{
+background: #50C9C3;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #96DEDA, #50C9C3);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #96DEDA, #50C9C3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+h1{
+	color: white;
+	background-color: blue;
+	margin: 0;
+	padding: 10px 20px;
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: normal;
+}
+
+/*the list-style property removes the bullet points from the lis*/
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;  
+}
+
+.fa-plus{
+	float: right;
+}
+
+li{
+	background: #fff;
+	height: 50px;
+	line-height: 50px;
+	color: #666;
+}
+
+
+span{
+	background-color: red;
+	height: 40px;
+	color: white;
+	margin-right: 30px;
+	margin-top: 5px;
+	text-align: center;
+	display: inline-block;
+	width: 0;
+	opacity: 0;
+	transition: 0.25s linear;
+}
+
+li:hover span{
+	width: 40px;
+	opacity: 1.0;
+}
+
+
+/*different color for every other li: 3n for third w keda*/
+li:nth-child(2n){
+	background-color: #e2d9ff;
+}
+
+input{
+	box-sizing: border-box;
+	width: 100%;
+	padding: 13px 13px 13px 28px;
+	background-color: #f7f7f7;
+	color: #2980b9;
+}
+
+
+input:focus{
+	background: #fff;
+	border: 3px solid #2980b9;
+	outline: none;
+}
+
+#container{
+	/*border: 2px solid black;*/
+	width: 400px;
+	height: 100px;
+	margin: 100px auto;
+	background-color: #e2d9ff;
+	box-shadow: 0 0 3px rgba(0 , 0 , 0, 0.1);
+}
+
+.completed{
+	color:gray;
+	text-decoration: line-through;
+}
+
+
+/*make the input fade out when we click the plus sign*/
